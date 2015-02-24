@@ -1,6 +1,6 @@
 title: 复习JavaScript八之操作XML
 date: 2015-02-02 17:50:14
-tags: node&js
+tags: JavaScript
 ---
 在以前XML是存储和传输数据的事实标准（客户端没有出现JSON之前），那个时候浏览器还不支持解析XML，于是很多开发者需要自己写一个XML解析器。原理，就是把XML也转化成DOM文档，然后通过DOM API来获取。
 

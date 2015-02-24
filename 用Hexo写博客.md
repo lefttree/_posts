@@ -1,6 +1,6 @@
 title: 用Hexo写博客
 date: 2014-11-22 00:12:00
-tags: hexo
+tags: nodejs
 ---
 
 在看下面内容之前，请先确认是否已经安装nodejs，若无则先安装。

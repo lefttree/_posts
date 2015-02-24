@@ -1,6 +1,6 @@
 title: 复习JavaScript十之理解引用类型和匿名函数闭包
 date: 2015-02-03 19:02:01
-tags: node&js
+tags: JavaScript
 ---
 
 引用类型虽然看起来很类很相似，但是它们却是不同的概念，引用类型的值，也就是对象是引用类型的一个实例。在Js中引用类型主要有Object，Array，Date，正则，Function等。

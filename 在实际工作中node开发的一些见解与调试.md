@@ -1,6 +1,6 @@
 title: 在实际工作中node开发的一些见解与调试
 date: 2014-11-14 20:04:45
-tags: node&js
+tags: nodejs
 ---
 
 **真实情况是这样的** 

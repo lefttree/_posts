@@ -1,6 +1,6 @@
 title: 复习JavaScript七之DOM
 date: 2015-01-28 19:51:01
-tags: node&js
+tags: JavaScript
 ---
 DOM是针对HTML和XML文档的一个API，主要是使用JavaScript来进行编程操作HTML和XML文档。其他语言如果实现了DOM标准，理论上也是可以使用这个API的，这里仅仅讨论JavaScript的应用。
 

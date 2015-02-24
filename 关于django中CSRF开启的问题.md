@@ -1,6 +1,6 @@
 title: 关于django中CSRF开启的问题
 date: 2014-11-14 20:33:12
-tags: python django
+tags: django
 ---
 
 ##django 处理CSRF机制保护下的POST表单提交

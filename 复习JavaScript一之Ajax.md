@@ -1,6 +1,6 @@
 title: 复习JavaScript一之Ajax
 date: 2015-01-23 18:07:54
-tags: node&js
+tags: JavaScript
 ---
 
 > IE8已上，支持现代XMLHttpRequest

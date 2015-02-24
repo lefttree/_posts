@@ -1,6 +1,6 @@
 title: 复习JavaScript二之跨域
 date: 2015-01-23 22:17:20
-tags: node&js
+tags: JavaScript
 ---
 
 客户端Js出于安全的考虑，不允许跨域调用其他页面的对象，正是因为这样才给Ajax带来了很多不方便的地方。跨域最简单的理解就是因为Js同源策略的存在，比如a.com域名下的Js不能访问b.com下的Js对象。

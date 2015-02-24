@@ -1,6 +1,6 @@
 title: 复习JavaScript四之Object
 date: 2015-01-25 21:42:07
-tags: node&js
+tags: JavaScript
 ---
 JavaScript的所有对象都衍生于Object对象，所有对象都继承了Object.prototype上的方法和属性，虽然它们可能会被覆盖，熟悉它对于编程能起到很大的作用，也能比较深刻的了解JavaScript这门语言。
 

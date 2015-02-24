@@ -1,6 +1,6 @@
 title: this与prototype的区别
 date: 2015-01-05 19:15:53
-tags: node&js
+tags: JavaScript
 ---
 
 * this可以访问私有成员（用var声明的变量）私有方法（直接function或者内部），prototype无法访问

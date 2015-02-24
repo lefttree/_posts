@@ -1,6 +1,6 @@
 title: 携程邮轮开发部django分享
 date: 2014-11-14 20:20:19
-tags: python django
+tags: django
 ---
 
 使用django快速开发一个web网站

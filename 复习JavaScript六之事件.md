@@ -1,6 +1,6 @@
 title: 复习JavaScript六之事件
 date: 2015-01-27 18:08:04
-tags: node&js
+tags: JavaScript
 ---
 
 > IE浏览器的事件不是复习的重点

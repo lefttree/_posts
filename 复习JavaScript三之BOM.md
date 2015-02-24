@@ -1,6 +1,6 @@
 title: 复习JavaScript三之BOM
 date: 2015-01-24 22:14:04
-tags: node&js
+tags: JavaScript
 ---
 BOM提供了很多对象，它的核心是window，表示它是浏览器的一个实例，在ECMAScript中又是Global对象。它提供了很多访问浏览器的功能，这些功能与网页无关，所以缺少事实标准的BOM既有意思又有些坑。复习它，主要是复习几个比较有用的对象，其他可以了解一二。
 

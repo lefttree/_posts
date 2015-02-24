@@ -1,6 +1,6 @@
 title: 学习zepto源代码中的each函数
 date: 2015-02-17 17:41:49
-tags: node&js
+tags: JavaScript
 ---
 
 each顾名思义是用来遍历的
