@@ -5,7 +5,7 @@ tags: 简历
 
 ##个人信息：
 
-向文文 xiangwenwe@foxmail.com.com  (+86) 18574532867 
+向文文 xiangwenwe@foxmail.com  (+86) 18574532867 
 
 技术博客 [http://lcepy.github.io/](http://lcepy.github.io/)
 
