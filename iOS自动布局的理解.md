@@ -13,8 +13,3 @@ tags: iOS
 比如要查看效果，可以右边的属性栏中选择Orientation中的Landscape，就变成了横屏。如果想删除约束，可以在左侧的文档大纲中进行删除，假设一个视图没有约束，也可以在文档大纲中来add约束。
 
 如果想要查看一个约束，可以在Show the size inspector中查看constraints。
-
-
-
-
-

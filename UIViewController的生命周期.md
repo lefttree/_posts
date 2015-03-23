@@ -33,6 +33,3 @@ viewDidLoad -> viewWillAppear -> viewDidAppear -> viewWillDisappear -> viewDidDi
 关于layout的顺序
 
 viewWillLayoutSubviews -> viewDidLayoutSubviews
-
-
-
