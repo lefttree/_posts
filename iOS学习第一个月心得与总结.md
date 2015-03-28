@@ -74,9 +74,9 @@ viewWillAppear -> viewDidAppear（控制视图显示）viewWillDisappear -> view
 
 一个月下来，也算是进门了，感觉它没有网上人们传的那么困难，凡事用心，一点一点的推进，就容易了，希望今年可以做自己的第一个应用上架App Store。
 
-[使用基础动画以及UITableView制作的一个Demo](https://github.com/lcepy/geekObjective-C/tree/master/UseHMGLTransitionsAnimations)
+[使用基础动画以及UITableView制作的一个Demo](https://github.com/lcepy/LearnObjective-C/tree/master/UseHMGLTransitionsAnimations)
 
-[访问相册，摄像头，简单从网络获取资源制作的一个Demo](https://github.com/lcepy/geekObjective-C/tree/master/HttpImageAndPho)
+[访问相册，摄像头，简单从网络获取资源制作的一个Demo](https://github.com/lcepy/LearnObjective-C/tree/master/HttpImageAndPho)
 
 iOS学习资料的收集
 

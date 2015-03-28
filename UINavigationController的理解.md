@@ -69,4 +69,4 @@ UINavigationController是一个栈结构，所谓的栈结构也就是一个顺�
 
 然后创建一个按钮，导航到第二个视图控制器上。
 
-[源代码查看](https://github.com/lcepy/geekObjective-C/tree/master/NavigationControllerDemo)
+[源代码查看](https://github.com/lcepy/LearnObjective-C/tree/master/NavigationControllerDemo)
