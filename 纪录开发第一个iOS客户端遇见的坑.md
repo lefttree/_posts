@@ -63,7 +63,7 @@ Block的语法有些难度，特别是灵活运用的时候，但是记住一点
 引用资料：
 
 * [GCD](http://blog.devtang.com/blog/2012/02/22/use-gcd/)
-* [NSFileManager](http://nshipster.cn/nsfilemanager/)
+
 
 在拿到图片image对象后，怎么处理，是一个非常头疼的问题。LeanCloud的AVIMImageMessage类需要的是一个filePath而不是UIImage或者NSData对象，iOS应用是没有权限访问应用沙盒之外的东西的。首先想到的解决办法是把这个UIImage写入到应用内的Documents目录下的Photos目录，然后把这个地址发送给AVIMImageMessage对象。考虑到文件IO操作，还会对应用界面卡顿，所以把这个任务委托给了GCD去调度。
 
@@ -71,9 +71,75 @@ Block的语法有些难度，特别是灵活运用的时候，但是记住一点
 
 为什么说这里是坑呢？因为它是一个IM系统，操作会非常的频繁，最关键的是展示是在web中，它的交互流程很坑。
 
+**文件处理**
+
+* [NSFileManager](http://nshipster.cn/nsfilemanager/)
+
+针对每一个用户都应该在应用沙盒内有它对应的一个缓存文件，它必须写入在Documents目录下，当人在获取之前，可以先判断一下，文件是否存在。
+
+
 **使用ionic添加插件时的巨坑**
 
 在升级了ionic为1.3.18之后，它的plugin编译时需要手动添加，据说这个版本他们去掉了自动添加的模块，于是写在配置文件中的插件，需要在platform add ios后，再ionic plugin add im手动添加到编译环境中，每一个都需要重复上述的动作，最后ionic build ios。
 
 希望下一个版本，ionic能把这个补上吧。
 
+**debug模式|重构IM|Date处理**
+
+debug workflow 如果选择了汇编debug，进入的是直接查看内存地址的debug模式，这种模式某些情况下有用。本来使用web来写IM我们发现它的性能实在是不能忍受，于是用OC把它重构了。
+
+使用NSDate来处理时间的时候，还需要NSDateFormatter来格式化，而且拿到的毫秒还需要除以1000，因为OC只处理秒单位。
+
+
+**代码布局聊天界面的cell**
+
+利用CGFloat mainScreenWidth = [UIScreen mainScreen].bounds.size.width来获取屏幕的宽度，然后计算自定义的cell，统计出来一个高度，在-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath 返回给TableView。
+
+	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+	{
+    	MissIMFrame *missIMFrame = [self.modelManager.dataSource objectAtIndex:indexPath.row];
+    	return missIMFrame.cellHeight;
+	}
+
+**解析历史纪录**
+
+第三方的leanCloud拉取的历史纪录全部是字符串，还要进一步的处理，转成JSON，这个地方主要是使用了NSJSONSerialization来处理，判断解析的错误，如果错误了，说明它是一个真正的文本，如果是正确的，那么说明它是一个可以转化为字典的字符串，然后再进一步处理。
+
+**滚动上拉加载历史纪录**
+
+实现scrollView的三个协议
+
+	-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+	{
+    	//手指触摸屏幕，准备滚动的那一刻
+    	NSLog(@"手指滑动开始－－－－－的那一瞬间");
+    	NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
+	}
+
+	-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+	{
+    	NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
+	}
+
+	-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+	{
+    	//手指离开屏幕，放下的那一刻
+    	NSLog(@"刷动到顶部，放下的时候");
+    	NSLog(@"%@",NSStringFromCGPoint(scrollView.contentOffset));
+    	if (scrollView.contentOffset.y < 0 && self.historyTimeId > 0) {
+        	if (self.isScroll) {
+            	self.application.networkActivityIndicatorVisible = YES;
+            	[self.mainUI.MissIMActivity startAnimating];
+            	self.isScroll = NO;
+            	[self fetchHistoryMessage:self.conversationId timeId:self.historyTimeId];
+        	}
+    	}
+	}
+
+**UIApplication**
+
+在info.plist文件中设置Application dose not run is background 设置为YES，就可以在应用退出的时候进行存盘了
+
+**Category添加自定义属性**
+
+分类只能在运行时，利用它的机制，动态的添加属性，使用@dynamic关键字，和两个函数objc_setAssociatedObject，objc_getAssociatedObject。
