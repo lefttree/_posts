@@ -63,5 +63,10 @@ WARNING ITMS 90025:Missing recommended icon file the bundle does not contain an 
 
 如果应用审核通过了，在使用的过程中发现有重大的bug导致应用crash，可以申请加急，非常快，[contact](https://developer.apple.com/appstore/contact/?topic=expedite%3E)
 
-最后《码农周刊》iOS客户端愉快的上线了[<img src="http://websources.qiniudn.com/iOS/963e0ee8-9013-11e4-8091-7ece67d64729.png" width="135" height="40" alt="AppStore"/>](https://itunes.apple.com/cn/app/yuan-yi-yue/id990227579?l=en&mt=8)
+最后《码农周刊》iOS客户端愉快的上线了
 
+[![AppStore](https://camo.githubusercontent.com/770175f6c01d89c84a020706126a9e6399ff76c4/68747470733a2f2f696d672e736869656c64732e696f2f636f636f61706f64732f702f4b696e676669736865722e7376673f7374796c653d666c6174)](https://itunes.apple.com/cn/app/yuan-yi-yue/id990227579?l=en&mt=8)  [![manong-reading](https://camo.githubusercontent.com/b0224997019dec4e51d692c722ea9bee2818c837/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6d6173686170652f6170697374617475732e737667)](https://github.com/lcepy/manong-reading)
+
+[Download on the App Store](https://itunes.apple.com/cn/app/yuan-yi-yue/id990227579?l=en&mt=8) 
+
+[checking on the manong-reading project ](https://github.com/lcepy/manong-reading)
