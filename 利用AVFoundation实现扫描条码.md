@@ -59,6 +59,8 @@ metadataObjects是一个AnyObject的数组，在这里，还需要进步的判�
 	
 ##在Objective-C项目中使用
 
+runpath $(inherited)@executable_path/Frameworks
+
 三步走图片，可查
 
 ![](http://7qncz5.com1.z0.glb.clouddn.com/iOS/bridging-header-file.png)
