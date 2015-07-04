@@ -13,15 +13,23 @@ Github [https://github.com/lcepy](https://github.com/lcepy)
 
 中南林业科技大学/大专
 
-Skill set：JavaScript iOS NodeJs Python 
+Skill set：JavaScript iOS/Mac OS X Objective-C Swift Hybrid App NodeJs
 
 ##工作经验：
 
+*生态农业  创业*
+
+筹备时间：2014年－2015年
+
+目前状态：7月4日解散
+
+解散原因：投资人撤资，合伙人人中途变卦
+
 *每日优鲜  iOS开发工程&JavaScript开发工程师*
 
-任职时间：2015年3月20日－至今
+任职时间：2015年3月20日－2015年6月23日
 
-工作职责：负责Hybrid App的开发以及iOS的开发工作
+工作职责：朋友公司帮忙，负责Hybrid App的开发以及iOS的开发工作
 
 App下载，可以在各大app市场下载，apple需要在appstore中下载
 
@@ -59,13 +67,11 @@ App下载，可以在各大app市场下载，apple需要在appstore中下载
 
 ##经历表述：
 
-在软件工程，前端领域已经工作近四年之久，对于编程的思考，解决问题的思路都已形成了自己比较独特的思维，语言只是解决问题的一个工具，最关键的还是在于人，如何去规划问题，思考问题，并解决问题。
+在软件工程领域已经工作四年之久，对于编程的思考，解决问题的思路都已形成了自己比较独特的思维，语言只是解决问题的一个工具，最关键的还是在于人，如何去规划问题，思考问题，并解决问题。
 
-我比较擅长JavaScript，近几年比较流行的Nodejs，HTML5 API CSS3也有一些自己总结的经验.三年多的工作经验集中在客户端技术，包括SPA MVC客户端，Hybrid app客户端，移动浏览器H5应用，有过一年左右的python网络编程，对请求，一些服务端，客户端框架，比如zepto underscore  django，应用在客户端，服务端上的MVC开发模式，HTML5 API都非常的了解和掌握。
+我比较擅长JavaScript，iOS/Mac OS X平台的开发，近几年比较流行的Nodejs，HTML5 API CSS3也有一些了解.三年多的工作经验集中在客户端技术，包括SPA MVC客户端，Hybrid app客户端，移动浏览器H5应用，有过一年左右的python网络编程，对请求，一些服务端，客户端框架，比如zepto underscore ionic django，应用在客户端，服务端上的MVC开发模式，HTML5 API都非常的了解和掌握。
 
-平时，也掌握了基本的nodejs，主要是使用express来写博客等学习，如果需要，我相信自己能在很短的时间内掌握它。
-
-目前个人开发iOS应用已经有一年左右的时间，对基础的c，Objective-C，xcode工具等都比较熟练的掌握了，
+目前个人独立开发iOS应用已经有一年多的时间，上线的App有[《猿已阅》](https://github.com/lcepy/manong-reading)
 
 ##致谢
 
