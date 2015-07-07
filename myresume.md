@@ -23,7 +23,7 @@ Skill set：JavaScript iOS/Mac OS X Objective-C Swift Hybrid App NodeJs
 
 目前状态：7月4日解散
 
-解散原因：投资人撤资，合伙人人中途变卦
+解散原因：投资人撤资，合伙人中途变卦
 
 *每日优鲜  iOS开发工程&JavaScript开发工程师*
 
