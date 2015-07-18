@@ -60,11 +60,11 @@ png图片可以压缩质量
 
 * [tinypng](https://tinypng.com/)
 
-设计工具，（做为q一个不懂设计的人用这个也很容易）198¥
+设计工具，（做为一个不懂设计的人用这个也很容易）198¥
 
 * [Pixelmator](http://www.pixelmator.com/support/)
 
-自动生成icon，只需要上次一张1024*1024图片，在线和Mac客户端要求一样
+自动生成icon，只需要上传一张1024*1024图片，在线和Mac客户端要求一样
 
 * [makeappicon在线的](http://makeappicon.com/)
 * [Mac 客户端的](http://wearemothership.com/)
